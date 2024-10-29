@@ -1,5 +1,13 @@
 {
   "dependencies": {
     "react-router-dom": "^6.27.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  },
+  "homepage": "http://romanyrefaat1.github.io/Pomodoro-App-React-JS",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
