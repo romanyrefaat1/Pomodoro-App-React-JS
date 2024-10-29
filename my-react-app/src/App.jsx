@@ -10,10 +10,6 @@ const App = () => {
   const { isLiteMode } = useContext(TemeContext);
 
   useEffect(() => {
-    console.log(localStorage.getItem(`isCountin`))
-  }, [])
-
-  useEffect(() => {
     if (isLiteMode) {
       document.body.classList.add('lite-mode');
       document.body.classList.remove('dark-mode');

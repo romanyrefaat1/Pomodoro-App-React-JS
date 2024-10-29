@@ -1,0 +1,37 @@
+.task--container {
+  background-color: #d9d9d9;
+  padding: .4rem 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.7rem;
+
+    &.badje {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 12px;
+
+      .time-per-session {
+        padding: 5px 10px;
+        color: var(--differ-color) !important;
+
+        &.sort {
+          background-color: #13ae35;
+        }
+        &.medium {
+            background-color: #137AAE;
+        }
+      }
+    }
+  }
+
+  button {
+    font-size: 12px !important;
+    padding: 10px 20px !important;
+  }
+}

@@ -1,0 +1,24 @@
+.tasks-section--container {
+  margin-top: 5rem;
+
+  div.top-eader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    * {
+      color: var(--differ-color) !important;
+    }
+    button {
+      color: var(--secondary-text-color) !important;
+      font-size: 14px;
+      display: flex;
+      gap: 0.4rem;
+    }
+  }
+
+  div.tasks-container {
+    padding: 10px;
+    background-color: var(--differ-color);
+  }
+}

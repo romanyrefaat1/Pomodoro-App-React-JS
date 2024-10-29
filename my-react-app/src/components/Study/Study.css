@@ -1,0 +1,12 @@
+.study {
+    position: relative;
+    button.sow-tasks-button{
+        position: absolute;
+        right: 0;
+        bottom: -70px;
+        background-color: var(--secondary-color);
+        color: var(--differ-color) !important;
+        padding: 15px;
+        border-radius: 50%;
+    }
+}

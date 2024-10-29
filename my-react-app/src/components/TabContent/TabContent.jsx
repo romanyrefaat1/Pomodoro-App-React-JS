@@ -25,8 +25,6 @@ const TabContent = ({ timerObj, isCountin, isFullScreen }) => {
   };
 
   const [timerFs, setTimerFs] = useState(140);
-
-  useEffect(() => console.log(timerObj), [timerObj]);
   return (
     <div
       ref={elemToFullScreenRef}
@@ -66,7 +64,7 @@ const TabContent = ({ timerObj, isCountin, isFullScreen }) => {
         elemToFullScreen={elemToFullScreenRef.current}
         classList={`not-btn-style`}
       />
-      <p contentEditable>note..</p>
+      {/* <p contentEditable={false}>note..</p> */}
     </div>
   );
 };

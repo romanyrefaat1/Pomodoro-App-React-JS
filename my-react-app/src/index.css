@@ -1,7 +1,7 @@
 :root {
   --main-color: hsl(0, 0%, 13%);
   --lite-main-color: hsl(0, 0%, 83%);
-  --differ-color: #c8c8c8;
+  --differ-color: #C8C8C8;
   --secondary-color: hsl(0, 0%, 30%);
 
   --main-text-color: var(--main-color);
@@ -115,4 +115,12 @@ div.sec-rad {
 /* .section {transition: 1s;} */
 .full-screen {
   font-size: 150px;
+}
+
+.timer-button:not(.not-btn-style) {
+  background-color: var(--main-color);
+  color: var(--differ-color) !important;
+  padding: 0.8rem 1.6rem;
+  font-size: 20px;
+  margin: 2rem 0 1rem;
 }
