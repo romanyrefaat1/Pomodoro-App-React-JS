@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useContext, useEffect } from "react";
+import Tabs from "./components/Tabs/Tabs";
+import Content from "./components/Content/Content";
 
-function App() {
-  const [count, setCount] = useState(0)
+import "./App.css";
+import { IsFullScreenContext } from "./context/isFullScreenMode";
+import { TemeContext } from "./context/TemeContext";
+
+const App = () => {
+  const { isLiteMode } = useContext(TemeContext);
+
+  useEffect(() => {
+    if (isLiteMode) {
+      document.body.classList.add('lite-mode');
+      document.body.classList.remove('dark-mode');
+    } else {
+      document.body.classList.remove('lite-mode');
+      document.body.classList.add('dark-mode');
+    }
+  }, [isLiteMode]);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className={`app`}>
+      {/* {Object.values(isFullScreen).some((value) => value) ? null : <Tabs />} */}
+      <Tabs />
+      <Content />
+    </div>
+  );
+};
 
-export default App
+export default App;

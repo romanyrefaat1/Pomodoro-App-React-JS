@@ -1,0 +1,13 @@
+.tabs {
+  display: flex;
+  
+  padding: 1.4rem 5rem;
+  width: fit-content;
+  gap: 1rem;
+
+  a {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
