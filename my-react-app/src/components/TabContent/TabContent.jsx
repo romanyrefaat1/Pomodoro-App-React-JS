@@ -40,7 +40,7 @@ const TabContent = ({ timerObj, isCountin, isFullScreen }) => {
           {isCountin ? (
             <>
               <span style={{ fontSize: `${timerFs}px` }}>
-                {timerObj.fullTimer}
+                {localStorage.getItem(`currentTime`) || `25:00`}
               </span>
               {/* <button onClick={() => setTimerFs((prev) => prev + 32)}>+</button> */}
             </>

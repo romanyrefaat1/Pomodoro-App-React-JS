@@ -26,7 +26,8 @@ const TimerValueProvider = ({ children }) => {
         fullTimer: "25:00",
       }));
     }
-  }, [isCountin]);
+    localStorage.setItem(`isCountin`, timerObj.isCountin)
+  }, [isCountin, timerObj.isCountin]);
 
   useEffect(() => {
     // Update fullTimer whenever timerValueOne or timerValueTwo changes
@@ -34,6 +35,10 @@ const TimerValueProvider = ({ children }) => {
       ...prev,
       fullTimer: `${prev.timerValueOne}:${prev.timerValueTwo.padStart(2, "0")}`,
     }));
+
+    document.title = `Study: ${timerObj.timerValueOne}:${timerObj.timerValueTwo.padStart(2, "0")}`
+
+    localStorage.setItem(`currentTime`, `${timerObj.timerValueOne}:${timerObj.timerValueTwo.padStart(2, "0")}`)
   }, [timerObj.timerValueOne, timerObj.timerValueTwo]);
 
   return (
