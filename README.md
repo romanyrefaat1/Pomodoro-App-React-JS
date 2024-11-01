@@ -25,37 +25,18 @@ A Pomodoro-based productivity app built with React.js that helps you manage task
 
 ## 📝 Getting Started
 
-### Prerequisites
-- Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
+Start using the web application to boost your productivity right away! Access it here: [Pomodoro Task Tracker](https://romanyrefaat1.github.io/Pomodoro-App-React-JS/)
 
-### Installation
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/romanyrefaat1/Pomodoro-App-React-JS.git
-   cd Pomodoro-App-React-JS
 
-    Install dependencies:
 
-    bash
-
-npm install
-
-Run the app:
-
-bash
-
-    npm start
-
-    Open http://localhost:3000 to view it in the browser.
-
-🧩 Usage
-Task List
+## 🧩 Usage
+- **Task List:**
 
     Add a Task: Enter the task name and click on "Add" to create a new task.
     Mark Complete: When a task is done, mark it as complete to keep your list organized.
     Edit or Delete Tasks: Update tasks as needed or delete them from the list.
 
-Timer & Session Tracking
+- **Timer & Session Tracking:**
 
     Start a Session: Select a task and start the Pomodoro timer.
     Track Sessions: Each completed Pomodoro session is logged and associated with your selected task, allowing you to track progress over time.
